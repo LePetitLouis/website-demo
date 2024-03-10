@@ -1,0 +1,132 @@
+title: Station Location Loisirs - Briare 
+description: Venez vous amuser avec nos Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électrique, Vélos d'eau, Rosalie, Paddles. Savourez l'Aventure en Pleine Nature.
+hero:
+  title: Venez vous amuser avec nos
+  tags: [Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électriques, Vélos d'eau, Rosalies, Paddles]
+  description: Savourez l'Aventure en Pleine Nature.
+  headline:
+    label: Ouverture du 01 Avril au 31 Octobre
+logos:
+  title: Trusted by the world's best
+  icons:
+    - i-simple-icons-amazonaws
+    - i-simple-icons-heroku
+    - i-simple-icons-netlify
+    - i-simple-icons-vercel
+    - i-simple-icons-cloudflare
+features:
+  headline: Nos locations
+  title: Découvrez nos offres de location
+  description: Une aventure sur mesure pour tous les amateurs de plein air.
+  items:
+    - title: Canoës
+      description: "Tarif Location de Canoës - Durée 1/2 h à 1/2 journée : 5,00 €"
+      image: '/images/canoe.png'
+    - title: Navi-glisseurs
+      description: 'Tarif de location de Navi-glisseurs (maxi 4 personnes) - Durée 1/2 h à 1 h : de 12,00€ à 22,00 €'
+      image: '/images/navi-glisseur.png'
+    - title: Quadri-cycle
+      description: 'Tarif Location de Quadri-cycle : Durée 1/2 h à 1h : de 12,00 € à 22,00 €'
+      image: '/images/rosalie.png'
+    - title: Bateaux électrique
+      description: 'Tarif location de Bateaux électrique (maxi 7 personnes) - Durée de 1/2h à 1h : de 29,00 € à 48,00 €'
+      image: '/images/electric-boat.png'
+    - title: Vélos d'eau
+      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      image: '/images/water-bike.png'
+    - title: Rosalie
+      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      image: '/images/rosalie.png'
+gallery:
+  headline: Galerie
+  title: L'Évasion en images
+  description: Explorez notre Monde en plein air.
+  pictures: 
+    - url: '/images/canoe.png'
+      span: col-span-2
+    - url: '/images/electric-boat.png'
+      span: col-span-2
+    - url: '/images/navi-glisseur.png'
+      span: col-span-2
+    - url: '/images/rosalie.png'
+      span: col-span-3
+    - url: '/images/water-bike.png'
+      span: col-span-3
+    - url: '/images/paddles.png'
+      span: col-span-6
+testimonials:
+  headline: Témoignages
+  title: Ce que nos clients disent de leurs aventures
+  items:
+    - quote: "Bien placé ce loueur propose une grande offre dont, sans doute, le meilleur véhicule pour se promener sur l'eau : le canoë. Un patron très sympa et de bons conseils. Tarifs raisonnables. La visite du canal latéral est très agréable par beau temps."
+      author:
+        name: Maxime Ollive
+        description: CEO at Company
+        rating: ONE
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+          loading: lazy
+    - quote: Expérience fluviale et le loueur de bateau Joël extraordinaire. Bonne balade sur le canal de Briare a refaire sans hésiter !
+      author:
+        name: Elias Ferhat
+        description: CEO at Company
+        rating: TWO
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+          loading: lazy
+    - quote: Le propriétaire est super gentil et qui aime son métier. Les équipements du canoë sont vraiment au top à un prix plus que abordable. On a eu une ballade sur l’eau merveilleux. La cerise sur le gateau est une gaufre et un thé de récompense de nos efforts :).
+      author:
+        name: Feuille de Lavande
+        description: CEO at Company
+        rating: THREE
+        avatar:
+          src: https://i.pravatar.cc/120?img=3
+          loading: lazy
+    - quote: Agréable balade au canal de Briare en Pédalo et l'accueil est sympathique et en plus vende de glace et boissons fraîche au top allez hop tous en embarcations.
+      author:
+        name: David MR
+        description: CEO at Company
+        rating: FOUR
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+          loading: lazy
+    - quote: Super accueil, super endroit, super balade! Tout est au top. Un grand merci au gérant qui est adorable. :)
+      author:
+        name: leila balil
+        description: CEO at Company
+        rating: FIVE
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+          loading: lazy
+    - quote: Nous avons loué un canoë pendant une heure, ce fut une très bonne expérience, à tous niveaux. Excellent accueil et très bons conseils (on hésitait entre différentes embarcations, avec notre petite fille), bon matériel, coin sympa à découvrir sur l'eau. Il est rare de nos jours en tant que touristes d'avoir un tel sens du service, où l'appât du gain ne prime pas. On sent une sincère envie de partager sa passion, sa bonne humeur, son amour de la région. Que demander de plus ?
+      author:
+        name: benoit dalaison
+        description: CEO at Company
+        rating: FIVE
+        avatar:
+          src: https://i.pravatar.cc/120?img=9
+          loading: lazy
+cta:
+  title: Get started today
+  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  links:
+    - label: Sign up for free
+      size: xl
+faq:
+  headline: FAQ
+  title: Questions fréquemment posées
+  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  items:
+    - label: Is this a secure service?
+      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+      defaultOpen: true
+    - label: How can I cancel my subscription?
+      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
+    - label: How does the free trial work?
+      content: Quis officia commodo magna eu qui aliquip duis.
+    - label: Can I switch plans later?
+      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
+    - label: Do you offer refunds?
+      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
+    - label: Do you offer support?
+      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
