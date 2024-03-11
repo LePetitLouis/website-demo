@@ -99,6 +99,9 @@ useSeoMeta({
                   <p class="text-gray-900 dark:text-white text-base font-bold truncate">
                     {{ item.title }}
                   </p>
+                  <p class="text-gray-900 dark:text-white text-sm font-bold truncate">
+                    {{ item.price }}
+                  </p>
                   <p class="text-[15px] text-gray-500 dark:text-gray-400 mt-1">
                     {{ item.description }}
                   </p>

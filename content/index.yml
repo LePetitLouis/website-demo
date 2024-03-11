@@ -20,21 +20,27 @@ features:
   description: Une aventure sur mesure pour tous les amateurs de plein air.
   items:
     - title: Canoës
+      price: '5,00 € pour 1/2 h à 1/2 journée'
       description: "Tarif Location de Canoës - Durée 1/2 h à 1/2 journée : 5,00 €"
       image: '/images/canoe.png'
     - title: Navi-glisseurs
-      description: 'Tarif de location de Navi-glisseurs (maxi 4 personnes) - Durée 1/2 h à 1 h : de 12,00€ à 22,00 €'
+      price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
+      description: 'Navi-glisseurs (maxi 4 personnes)'
       image: '/images/navi-glisseur.png'
     - title: Quadri-cycle
+      price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
       description: 'Tarif Location de Quadri-cycle : Durée 1/2 h à 1h : de 12,00 € à 22,00 €'
       image: '/images/rosalie.png'
     - title: Bateaux électrique
+      price: '29,00 € à 48,00 € pour 1/2 h à 1 h'
       description: 'Tarif location de Bateaux électrique (maxi 7 personnes) - Durée de 1/2h à 1h : de 29,00 € à 48,00 €'
       image: '/images/electric-boat.png'
     - title: Vélos d'eau
+      price: '5,00 € pour 1/2 h à 1/2 journée'
       description: Reprehenderit fugiat elit in do ipsum ut pariatur.
       image: '/images/water-bike.png'
     - title: Rosalie
+      price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       image: '/images/rosalie.png'
 gallery:
