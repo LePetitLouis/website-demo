@@ -1,8 +1,8 @@
 title: Station Location Loisirs - Briare 
-description: Venez vous amuser avec nos Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électrique, Vélos d'eau, Rosalie, Paddles. Savourez l'Aventure en Pleine Nature.
+description: Venez vous amuser avec nos Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électrique, Vélos d'eau, Rosalie, Paddle. Savourez l'Aventure en Pleine Nature.
 hero:
   title: Venez vous amuser avec nos
-  tags: [Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électriques, Vélos d'eau, Rosalies, Paddles]
+  tags: [Canoës, Navi-glisseurs, Quadri-cycle, Bateaux électriques, Vélos d'eau, Rosalies, Paddle]
   description: Savourez l'Aventure en Pleine Nature.
   headline:
     label: Ouverture du 01 Avril au 31 Octobre
@@ -26,7 +26,7 @@ features:
     - title: Navi-glisseurs
       price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
       description: 'Navi-glisseurs (maxi 4 personnes)'
-      image: '/images/navi-glisseur.png'
+      image: '/images/pedalo.png'
     - title: Quadri-cycle
       price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
       description: 'Tarif Location de Quadri-cycle : Durée 1/2 h à 1h : de 12,00 € à 22,00 €'
@@ -35,14 +35,14 @@ features:
       price: '29,00 € à 48,00 € pour 1/2 h à 1 h'
       description: 'Tarif location de Bateaux électrique (maxi 7 personnes) - Durée de 1/2h à 1h : de 29,00 € à 48,00 €'
       image: '/images/electric-boat.png'
-    - title: Vélos d'eau
-      price: '5,00 € pour 1/2 h à 1/2 journée'
+    - title: Vélos d'eau 4x4
+      price: '12,00 € à 22,00 € pour 1/2 h et 1 h'
       description: Reprehenderit fugiat elit in do ipsum ut pariatur.
       image: '/images/water-bike.png'
-    - title: Rosalie
-      price: '12,00 € à 22,00 € pour 1/2 h à 1 h'
+    - title: Paddle
+      price: '8,00 € à 14,00 € pour 1/2h et 1h'
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      image: '/images/rosalie.png'
+      image: '/images/paddle.png'
 gallery:
   headline: Galerie
   title: L'Évasion en images

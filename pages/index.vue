@@ -96,7 +96,7 @@ useSeoMeta({
                   <div class="mb-2 pointer-events-none">
                     <NuxtImg :src="item.image" loading="lazy" preload class="rounded-lg w-full max-h-52 object-cover" />
                   </div>
-                  <p class="text-gray-900 dark:text-white text-base font-bold truncate">
+                  <p class="text-gray-900 dark:text-white text-lg font-bold truncate">
                     {{ item.title }}
                   </p>
                   <p class="text-gray-900 dark:text-white text-sm font-bold truncate">
