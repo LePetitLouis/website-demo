@@ -40,7 +40,8 @@ const scrollToTop = () => {
         to="/"
         @click="scrollToTop"
       >
-        Station Location Loisirs <UBadge label="Briare" variant="subtle" class="hidden md:block mb-0.5" />
+        Station Location Loisirs 
+        <!-- <UBadge label="Briare" variant="subtle" class="hidden md:block mb-0.5" /> -->
       </ULink>
 
       <ul class="items-center px-3 gap-x-0 rounded-full hidden lg:flex">

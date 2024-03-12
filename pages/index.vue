@@ -60,10 +60,14 @@ useSeoMeta({
           </p>
 
           <div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 justify-center">
-            <UButton to="tel:+33612345678" label="Réserver maintenant" variant="primary" color="white"
-              size="xl" icon="i-heroicons-arrow-right-20-solid" class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm text-white dark:text-gray-900 bg-gray-900 hover:bg-gray-800 disabled:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center" :trailing="true" />
-            <UButton to="https://maps.app.goo.gl/yq6CmRisfdyJCMNK7" variant="primary" label="Où nous sommes" color="gray"
-              size="xl" icon="i-heroicons-map-pin-20-solid" class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center" target="_blank" />
+            <UButton to="tel:+33612345678" label="Réserver maintenant" variant="primary" color="white" size="xl"
+              icon="i-heroicons-arrow-right-20-solid"
+              class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm text-white dark:text-gray-900 bg-gray-900 hover:bg-gray-800 disabled:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
+              :trailing="true" />
+            <UButton to="https://maps.app.goo.gl/yq6CmRisfdyJCMNK7" variant="primary" label="Où nous sommes"
+              color="gray" size="xl" icon="i-heroicons-map-pin-20-solid"
+              class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
+              target="_blank" />
           </div>
         </div>
 
@@ -127,28 +131,11 @@ useSeoMeta({
             {{ page.gallery.description }}
           </p>
         </div>
-
-        <div
-          class="hidden sm:grid overflow-hidden rounded-xl grid md:grid-cols-4 lg:grid-cols-6  gap-8 scroll-mt-[calc(4rem+140px+128px+96px)]">
-          <div v-for="(picture, index) in page.gallery.pictures" :key="index" class="col-span-2">
-            <NuxtImg :src="picture.url" loading="lazy" preload class="cursor-pointer w-full h-full object-cover hover:brightness-75" @click="handleShowGallery(index)" />
-          </div>
-        </div>
-
-        <Gallery :pictures="page.gallery.pictures" :index="indexPicture" :show-gallery="showGallery" @close:gallery="showGallery = false" />
-
-        <div class="sm:hidden w-full relative overflow-hidden" @touchstart="onTouchStart" @touchmove="onTouchMove" @touchend="onTouchEnd">
-          <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(${offset}px)` }">
-            <div class="flex" ref="slide">
-              <div class="flex-[0_0_100%]" v-for="(picture, index) in page.gallery.pictures" :key="index">
-                <NuxtImg :src="picture.url" loading="lazy" preload class="w-full object-cover max-h-56" />
-              </div>
-            </div>
-          </div>
-          <div class="absolute bottom-[15px] right-[15px] z-50 bg-black text-white text-sm opacity-80 py-1 px-2 rounded"> 
-            <span>{{ currentIndex + 1 }} / {{ page.gallery.pictures.length }}</span>
-          </div>
-        </div>
+      </div>
+      <div class="flex flex-col gap-4 mt-24">
+        <Slider :images="page.gallery.pictures" orientation="left" />
+        <Slider :images="page.gallery.pictures" orientation="right" />
+        <Slider :images="page.gallery.pictures" orientation="left" />
       </div>
     </div>
 

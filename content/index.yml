@@ -47,19 +47,7 @@ gallery:
   headline: Galerie
   title: L'Évasion en images
   description: Explorez notre Monde en plein air.
-  pictures: 
-    - url: '/images/canoe.png'
-      span: col-span-2
-    - url: '/images/electric-boat.png'
-      span: col-span-2
-    - url: '/images/navi-glisseur.png'
-      span: col-span-2
-    - url: '/images/rosalie.png'
-      span: col-span-3
-    - url: '/images/water-bike.png'
-      span: col-span-3
-    - url: '/images/paddles.png'
-      span: col-span-6
+  pictures: ['/images/canoe.png', '/images/electric-boat.png', '/images/navi-glisseur.png', '/images/rosalie.png', '/images/water-bike.png', '/images/paddles.png', '/images/paddles.png', '/images/pedalo.png']
 testimonials:
   headline: Témoignages
   title: Ce que nos clients disent de leurs aventures
