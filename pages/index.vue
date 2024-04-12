@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
-const { onTouchEnd, onTouchMove, onTouchStart, offset, slide, currentIndex } = useCarousel(0, page.value.gallery.pictures, true)
-
 enum Rating {
   ONE = 1,
   TWO = 2,
@@ -199,17 +197,17 @@ useSeoMeta({
           </p>
         </div>
 
-        <div class="flex">
-          <ul class="p-4 flex-1 h-full flex flex-col gap-4 justify-center">
+        <div class="flex flex-col lg:flex-row flex-wrap">
+          <ul class="p-4 flex-1 h-full flex flex-col gap-8 justify-center">
             <template v-for="(item, index) in page.contact.items" :key="index">
               <li class="">
                 <div class="flex items-center gap-2 lg:gap-4 group text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 font-medium">
                   <div class="rounded-md p-2 inline-flex ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900 group-hover:text-background">
-                    <UIcon :name="item.icon" class="text-2xl" />
+                    <UIcon :name="item.icon" class="text-2xl text-gray-900 dark:text-white" />
                   </div>
                   <span class="text-gray-900 dark:text-white text-lg font-bold">{{ item.label }}</span>
                 </div>
-                <p class="mt-2 text-lg/8 text-gray-600 dark:text-gray-300">{{ item.description }}</p>
+                <p class="mt-2 text-md text-gray-600 dark:text-gray-300">{{ item.description }}</p>
               </li>
             </template>
           </ul>

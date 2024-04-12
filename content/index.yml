@@ -115,7 +115,7 @@ contact:
       icon: i-heroicons-map-pin-20-solid
     - label: Téléphone
       description: 06 20 81 56 13
-      icon: 'i-heroicons-phone-20-solid'
+      icon: i-heroicons-phone-20-solid
     - label: Email
       description: stationlocation@aol.com
       icon: i-heroicons-envelope-20-solid

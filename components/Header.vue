@@ -8,19 +8,19 @@ const { activeSection } = useScrollspy();
 const links = computed(() => [{
   label: 'Nos locations',
   to: 'features',
-  icon: 'i-heroicons-list-bullet'
+  icon: 'i-heroicons-list-bullet-20-solid'
 }, {
   label: 'Galerie',
   to: 'gallery',
-  icon: 'i-heroicons-photo'
+  icon: 'i-heroicons-photo-20-solid'
 }, {
   label: 'Témoignages',
   to: 'testimonials',
-  icon: 'i-heroicons-academic-cap'
+  icon: 'i-heroicons-academic-cap-20-solid'
 }, {
   label: 'Contact',
   to: 'contact',
-  icon: 'i-heroicons-envelope'
+  icon: 'i-heroicons-envelope-20-solid'
 }])
 
 const scrollToTop = () => {
@@ -62,7 +62,7 @@ const scrollToTop = () => {
         <UButton to="tel:+33612345678" aria-label="Mail" color="gray" variant="ghost" trailing-icon="i-heroicons-phone-20-solid" class="lg:flex" />
         <UButton to="mailto:stationlocation@aol.com" aria-label="Phone" color="gray" variant="ghost" trailing-icon="i-heroicons-envelope-20-solid" class="lg:flex" />
         <UButton to="https://www.facebook.com/JoeletCharline" target="_blank" aria-label="Facebook" color="gray" variant="ghost" trailing-icon="i-simple-icons-facebook" class="lg:flex" />
-        <UButton color="white" variant="ghost" :trailing-icon="showBurgerMenu ? 'i-heroicons-x-mark-20-solid' : 'i-heroicons-bars-3-20-solid'" class="lg:hidden flex transition" @click="showBurgerMenu = !showBurgerMenu" />
+        <UButton color="white" variant="ghost" :trailing-icon="showBurgerMenu ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" class="lg:hidden flex transition" @click="showBurgerMenu = !showBurgerMenu" />
       </div>
     </div>
     <Transition name="slide-left">
