@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const colorMode = useColorMode()
+
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
 enum Rating {
@@ -9,19 +11,20 @@ enum Rating {
   FIVE = 5
 }
 
-const showGallery = ref(false)
-const indexPicture = ref(0)
+const isDark = computed({
+  get () {
+    return colorMode.value === 'dark'
+  },
+  set () {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
 
 const starRating = (rating: Rating) => {
   const currentRating = Rating[rating] as unknown as number
   return Array.from({ length: 5 }, (_, i) => {
     return i < currentRating ? 'i-heroicons-star-20-solid' : 'i-heroicons-star'
   })
-}
-
-const handleShowGallery = (index: number) => {
-  indexPicture.value = index
-  showGallery.value = true
 }
 
 useSeoMeta({
@@ -35,8 +38,8 @@ useSeoMeta({
 <template>
   <div>
     <!-- HERO BANNER -->
-    <div class="py-24 sm:py-32 md:py-40 relative">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
+    <div class="py-24 sm:py-32 md:py-40 relative h-[calc(100vh-64px)] flex items-center justify-center">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
         <div class="text-center">
           <div class="mb-10">
             <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
@@ -68,8 +71,6 @@ useSeoMeta({
               target="_blank" />
           </div>
         </div>
-
-        <Placeholder />
       </div>
     </div>
 
@@ -212,7 +213,24 @@ useSeoMeta({
             </template>
           </ul>
           <div class="flex-1">
-            <Placeholder />
+            <MapboxMap
+              map-id="map"
+              :style="{
+                position: 'relative',
+                width: '100%',
+                height: '100%',
+                borderRadius: '.5rem'
+              }"
+              :options="{
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [2.732180739204646, 47.64178411667552],
+                zoom: 15
+              }"
+            >
+              <MapboxDefaultMarker
+                :lnglat="[2.732180739204646, 47.64178411667552]"
+              />
+            </MapboxMap>
           </div>
         </div>
       </div>
