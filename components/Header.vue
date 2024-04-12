@@ -62,7 +62,7 @@ const scrollToTop = () => {
         <UButton to="tel:+33612345678" aria-label="Mail" color="gray" variant="ghost" trailing-icon="i-heroicons-phone-20-solid" class="lg:flex" />
         <UButton to="mailto:stationlocation@aol.com" aria-label="Phone" color="gray" variant="ghost" trailing-icon="i-heroicons-envelope-20-solid" class="lg:flex" />
         <UButton to="https://www.facebook.com/JoeletCharline" target="_blank" aria-label="Facebook" color="gray" variant="ghost" trailing-icon="i-simple-icons-facebook" class="lg:flex" />
-        <UButton color="white" variant="ghost" :trailing-icon="showBurgerMenu ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" class="lg:hidden flex transition" @click="showBurgerMenu = !showBurgerMenu" />
+        <UButton aria-label="Menu" color="white" variant="ghost" :trailing-icon="showBurgerMenu ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" class="lg:hidden flex transition" @click="showBurgerMenu = !showBurgerMenu" />
       </div>
     </div>
     <Transition name="slide-left">

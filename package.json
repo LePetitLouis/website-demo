@@ -14,7 +14,6 @@
     "@nuxt/content": "^2.12.1",
     "@nuxt/ui": "^2.14.2",
     "nuxt": "^3.10.3",
-    "nuxt-vercel-analytics": "^1.0.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
