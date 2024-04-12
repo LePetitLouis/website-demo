@@ -184,23 +184,39 @@ useSeoMeta({
       </div>
     </div>
 
-    <!-- FAQ -->
-    <div id="faq" class="py-24 sm:py-32">
+    <!-- CONTACT -->
+    <div id="contact" class="py-24 sm:py-32">
       <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
         <div class="text-center flex flex-col items-center">
           <div class="mb-2 text-base/7 font-semibold text-primary">
-            {{ page.faq.headline }}
+            {{ page.contact.headline }}
           </div>
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
-            {{ page.faq.title }}
+            {{ page.contact.title }}
           </h2>
           <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
-            {{ page.faq.description }}
+            {{ page.contact?.description }}
           </p>
         </div>
 
-        <UAccordion multiple :items="page.faq.items" color="black" size="xl" variant="ghost"
-          class="max-w-4xl mx-auto" />
+        <div class="flex">
+          <ul class="p-4 flex-1 h-full flex flex-col gap-4 justify-center">
+            <template v-for="(item, index) in page.contact.items" :key="index">
+              <li class="">
+                <div class="flex items-center gap-2 lg:gap-4 group text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 font-medium">
+                  <div class="rounded-md p-2 inline-flex ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900 group-hover:text-background">
+                    <UIcon :name="item.icon" class="text-2xl" />
+                  </div>
+                  <span class="text-gray-900 dark:text-white text-lg font-bold">{{ item.label }}</span>
+                </div>
+                <p class="mt-2 text-lg/8 text-gray-600 dark:text-gray-300">{{ item.description }}</p>
+              </li>
+            </template>
+          </ul>
+          <div class="flex-1">
+            <Placeholder />
+          </div>
+        </div>
       </div>
     </div>
   </div>

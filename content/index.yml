@@ -106,21 +106,19 @@ cta:
   links:
     - label: Sign up for free
       size: xl
-faq:
-  headline: FAQ
-  title: Questions fréquemment posées
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+contact:
+  headline: Contact
+  title: Contactez-nous
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-      defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: Adresse
+      description: 46, rue des Prés Gris, 45250 Briare
+      icon: i-heroicons-map-pin-20-solid
+    - label: Téléphone
+      description: 06 20 81 56 13
+      icon: 'i-heroicons-phone-20-solid'
+    - label: Email
+      description: stationlocation@aol.com
+      icon: i-heroicons-envelope-20-solid
+    - label: Horaires
+      description: Ouvert selon les conditions climatiques, Avril - Octobre à partir de 14h
+      icon: i-heroicons-calendar-days-20-solid

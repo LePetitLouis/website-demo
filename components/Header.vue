@@ -18,9 +18,9 @@ const links = computed(() => [{
   to: 'testimonials',
   icon: 'i-heroicons-academic-cap'
 }, {
-  label: 'FAQ',
-  to: 'faq',
-  icon: 'i-heroicons-question-mark-circle'
+  label: 'Contact',
+  to: 'contact',
+  icon: 'i-heroicons-envelope'
 }])
 
 const scrollToTop = () => {
