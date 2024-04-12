@@ -198,7 +198,7 @@ useSeoMeta({
           </p>
         </div>
 
-        <div class="flex flex-col lg:flex-row flex-wrap">
+        <div class="flex flex-col lg:flex-row gap-8 md:gap-0">
           <ul class="p-4 flex-1 h-full flex flex-col gap-8 justify-center">
             <template v-for="(item, index) in page.contact.items" :key="index">
               <li class="">
@@ -218,6 +218,7 @@ useSeoMeta({
               :style="{
                 position: 'relative',
                 width: '100%',
+                minHeight: '400px',
                 height: '100%',
                 borderRadius: '.5rem'
               }"
