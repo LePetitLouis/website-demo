@@ -229,6 +229,7 @@ useSeoMeta({
               }"
             >
               <MapboxDefaultMarker
+                markerId="marker"
                 :lnglat="[2.732180739204646, 47.64178411667552]"
               />
             </MapboxMap>
