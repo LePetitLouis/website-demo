@@ -46,7 +46,6 @@ features:
 gallery:
   headline: Galerie
   title: L'Évasion en images
-  description: Explorez notre Monde en plein air.
   pictures: ['/images/canoe.png', '/images/electric-boat.png', '/images/navi-glisseur.png', '/images/rosalie.png', '/images/water-bike.png', '/images/paddles.png', '/images/paddles.png', '/images/pedalo.png']
 testimonials:
   headline: Témoignages

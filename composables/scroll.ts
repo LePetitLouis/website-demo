@@ -8,7 +8,7 @@ export default function useScrollspy() {
       { id: 'features' },
       { id: 'gallery' },
       { id: 'testimonials' },
-      { id: 'faq' }
+      { id: 'contact' }
     ];
 
     const observer = new IntersectionObserver(entries => {
