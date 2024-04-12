@@ -65,7 +65,7 @@ useSeoMeta({
               icon="i-heroicons-arrow-right-20-solid"
               class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm text-white dark:text-gray-900 bg-gray-900 hover:bg-gray-800 disabled:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
               :trailing="true" />
-            <UButton to="https://maps.app.goo.gl/yq6CmRisfdyJCMNK7" variant="primary" label="Où nous sommes"
+            <UButton to="https://maps.app.goo.gl/yq6CmRisfdyJCMNK7" variant="primary" label="Notre localisation"
               color="gray" size="xl" icon="i-heroicons-map-pin-20-solid"
               class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-medium rounded-full text-base gap-x-2.5 px-3.5 py-2.5 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
               target="_blank" />
@@ -97,7 +97,7 @@ useSeoMeta({
               <div class="gap-x-8 gap-y-4 rounded-xl flex-1 flex flex-col px-4 py-5 sm:p-6">
                 <div>
                   <div class="mb-2 pointer-events-none">
-                    <NuxtImg :src="item.image" loading="lazy" preload class="rounded-lg w-full max-h-52 object-cover" />
+                    <NuxtImg :src="item.image" :alt="item.title" loading="lazy" preload class="rounded-lg w-full max-h-52 object-cover" />
                   </div>
                   <p class="text-gray-900 dark:text-white text-lg font-bold truncate">
                     {{ item.title }}
@@ -137,7 +137,7 @@ useSeoMeta({
             :key="index"
             :src="image"
             :alt="image"
-            class="w-full h-full rounded-lg"
+            class="w-full h-full rounded-lg object-cover"
             loading="lazy"
             preload
           />
