@@ -118,7 +118,7 @@ useSeoMeta({
 
     <!-- GALLERY -->
     <div id="gallery" class="py-24 sm:py-32">
-      <div class="mx-auto sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
         <div class="text-center flex flex-col items-center">
           <div class="mb-2 text-base/7 font-semibold text-primary">
             {{ page.gallery.headline }}
@@ -130,11 +130,18 @@ useSeoMeta({
             {{ page.gallery.description }}
           </p>
         </div>
-      </div>
-      <div class="flex flex-col gap-4 mt-24">
-        <Slider :images="page.gallery.pictures" orientation="left" />
-        <Slider :images="page.gallery.pictures" orientation="right" />
-        <Slider :images="page.gallery.pictures" orientation="left" />
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <NuxtImg
+            v-for="(image, index) in page.gallery.pictures"
+            :key="index"
+            :src="image"
+            :alt="image"
+            class="w-full h-full rounded-lg"
+            loading="lazy"
+            preload
+          />
+        </div>
       </div>
     </div>
 
