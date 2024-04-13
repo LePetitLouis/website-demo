@@ -45,7 +45,7 @@ features:
       image: '/images/paddle.png'
 gallery:
   headline: Galerie
-  title: L'Évasion en images
+  title: L'évasion en images
   pictures: ['/images/canoe.png', '/images/electric-boat.png', '/images/navi-glisseur.png', '/images/rosalie.png', '/images/water-bike.png', '/images/paddles.png', '/images/paddles.png', '/images/pedalo.png']
 testimonials:
   headline: Témoignages
@@ -120,4 +120,4 @@ contact:
       icon: i-heroicons-envelope-20-solid
     - label: Horaires
       description: Ouvert selon les conditions climatiques, Avril - Octobre à partir de 14h
-      icon: i-heroicons-calendar-20-solid
+      icon: i-heroicons-calendar-days-20-solid
