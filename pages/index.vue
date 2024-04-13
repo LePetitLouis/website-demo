@@ -49,9 +49,9 @@ useSeoMeta({
 
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl">
             {{ page.hero.title }}
-            <ol class="overflow-hidden h-10 md:h-[72px]">
+            <ol class="overflow-hidden h-10 md:h-[80px]">
               <li v-for="(tag, index) in page.hero.tags" :key="index" class="text-primary animate-slide-up">
-                <span class="inline-block">{{ tag }}</span>
+                <span class="inline-block md:leading-[80px]">{{ tag }}</span>
               </li>
             </ol>
           </h1>

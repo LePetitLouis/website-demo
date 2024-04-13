@@ -13,7 +13,6 @@ export default function useScrollspy() {
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        console.log(entry.isIntersecting, entry.target.id);
         if (entry.isIntersecting) {
           activeSection.value = entry.target.id;
         }
@@ -23,7 +22,6 @@ export default function useScrollspy() {
     sections.forEach(section => {
       const element = document.getElementById(section.id);
       if (element) {
-        console.log('observing', element);
         observer.observe(element);
       }
     });
