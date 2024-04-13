@@ -87,6 +87,7 @@ const scrollToTop = () => {
         </div>
       </div>
     </Transition>
+    <UIcon name="i-heroicons-calendar-days-20-solid" class="hidden text-lg" />
   </header>
 </template>
 
